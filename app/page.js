@@ -5,6 +5,8 @@ import Navbar from '@/src/Navbar/Navbar'
 import Footer from '@/src/Footer/Footer'
 import CallToAction from '@/src/Calltoaction/CallToAction'
 import HeroSection from '@/src/HeroSection/HeroSection'
+import Cards from '@/src/Cards/Cards'
+import Features from '@/src/Features/Features'
 
 
 const home = () => {
@@ -12,6 +14,8 @@ const home = () => {
     <div>
     <Navbar/>
 <HeroSection/>
+<Features/>
+<Cards/>
 <CallToAction/>
 <Footer/>
     </div>
