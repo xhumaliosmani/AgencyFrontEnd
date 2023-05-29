@@ -10,11 +10,14 @@ const CallToAction = () => {
           <div class="-mx-4 flex flex-wrap items-center">
             <div class="w-full px-4 lg:w-1/2">
               <span class="mb-2 text-base font-semibold text-white">
-                Find Your Inspirational Read, or Create one yourself!
+                Find the perfect team to realise your business Gols!!
               </span>
               <h2 class="mb-6 text-3xl font-bold leading-tight text-white sm:mb-8 sm:text-[38px] lg:mb-0">
-                Get started and Create your own <br class="xs:block hidden" />
-                Creative Blog Posts
+                Get started Today and let us <br class="xs:block hidden" />
+                Take Care of the{" "}
+                <span className="text-transparent bg-gradient-to-r to-indigo-700 from-indigo-900 bg-clip-text ">
+                  Rest!
+                </span>
               </h2>
             </div>
             <div class="w-full px-4 lg:w-1/2">
@@ -23,13 +26,13 @@ const CallToAction = () => {
                   href={`/`}
                   class="hover:text-primary my-1 mr-4 inline-block rounded bg-[#4977e1] bg-opacity-[45%] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-100 md:px-9 lg:px-6 xl:px-9"
                 >
-                  See All Posts
+                 Talk to a Agent
                 </Link>
                 <Link
                   href={`/`}
                   class="my-1 inline-block rounded bg-[#13C296] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9"
                 >
-                  Create Post
+                  Get Started
                 </Link>
               </div>
             </div>
