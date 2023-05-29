@@ -8,6 +8,7 @@ import Feature6 from "../../public/images/Features/f6.png";
 import FeatureB1 from "../../public/images/Features/fb11.png";
 import FeatureB2 from "../../public/images/Features/fb22.png";
 import Image from "next/image";
+import { FadeIn } from 'react-slide-fade-in'
 
 const Features = () => {
   return (
@@ -88,11 +89,13 @@ const Features = () => {
               </div>
             </div>
             <div aria-hidden="true" class="mt-10 lg:mt-0">
-              <Image
-                src={FeatureB1}
-                alt="featureimage1"
-                class="hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto z-20 rounded-lg shadow-lg dark:dark:bg-gray-500"
-              />
+
+                <Image
+                  src={FeatureB1}
+                  alt="featureimage1"
+                  class="  taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto z-20 rounded-lg shadow-lg dark:dark:bg-gray-500"
+                />
+              
             </div>
           </div>
           <div>
