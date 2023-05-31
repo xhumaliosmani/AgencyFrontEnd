@@ -8,6 +8,7 @@ import HeroSection from "@/src/HeroSection/HeroSection";
 import Cards from "@/src/Cards/Cards";
 import Features from "@/src/Features/Features";
 import Script from "next/script";
+import Testimonial from "@/src/Testemonial/Testimonial";
 
 const home = () => {
   return (
@@ -17,6 +18,7 @@ const home = () => {
       <Features />
       <Cards />
       <CallToAction />
+      <Testimonial/>
       <Footer />
     </div>
   );

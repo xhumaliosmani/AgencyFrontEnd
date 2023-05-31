@@ -20,9 +20,7 @@ const Features = () => {
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
-
   useEffect(() => {
-
     if (isInView) {
       //fire animation
       mainControls.start("visible");
@@ -35,9 +33,7 @@ const Features = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-sky-500 to-indigo-500 h-[2px] w-[70%]">
-        
-      </div>
+      <div className="bg-gradient-to-r from-sky-500 to-indigo-500 h-[2px] w-[70%]"></div>
       {width < 631 ? (
         <section class="">
           <div class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
