@@ -1,15 +1,43 @@
-import Link from 'next/link';
-import React from 'react'
-
+"use client";
+import React, { useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
+import Link from "next/link";
 
 const CallToAction = () => {
+
+    const { innerWidth: width, innerHeight: height } = window;
+    const ref = useRef(null);
+
+    const isInView = useInView(ref);
+
+    const mainControls = useAnimation();
+    const slideControls = useAnimation();
+
+    useEffect(() => {
+      if (isInView) {
+        //fire animation
+        mainControls.start("visible");
+      }
+    }, [isInView]);
+
+
   return (
     <>
       <section class="py-20 lg:py-[50px] bg-[#e9e9e9]">
         <div class="container mx-auto">
           <div class="bg-[#5F6F94] relative z-10 overflow-hidden rounded py-12 px-8 md:p-[70px]">
             <div class="-mx-4 flex flex-wrap items-center">
-              <div class="w-full px-4 lg:w-1/2">
+              <motion.div
+                ref={ref}
+                variants={{
+                  hidden: { opacity: 0, x: -85 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{ duration: 0.7, delay: 0.25 }}
+                class="w-full px-4 lg:w-1/2"
+              >
                 <span class="mb-2 text-base font-semibold text-white">
                   Find the perfect team to realise your business Gols!!
                 </span>
@@ -20,9 +48,19 @@ const CallToAction = () => {
                     Rest!
                   </span>
                 </h2>
-              </div>
+              </motion.div>
               <div class="w-full px-4 lg:w-1/2">
-                <div class="flex flex-wrap lg:justify-end">
+                <motion.div
+                  ref={ref}
+                  variants={{
+                    hidden: { opacity: 0, x: 85 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  initial="hidden"
+                  animate={mainControls}
+                  transition={{ duration: 0.7, delay: 0.25 }}
+                  class="flex flex-wrap lg:justify-end"
+                >
                   <Link
                     href={`/`}
                     class="hover:text-primary my-1 mr-4 inline-block rounded bg-[#4977e1] bg-opacity-[45%] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-100 md:px-9 lg:px-6 xl:px-9"
@@ -35,7 +73,7 @@ const CallToAction = () => {
                   >
                     Get Started
                   </Link>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div>
@@ -107,6 +145,6 @@ const CallToAction = () => {
       <div className="bg-gradient-to-r flex justify-end ml-[30%] from-sky-500 to-indigo-500 h-[2px] w-[70%]"></div>
     </>
   );
-}
+};
 
-export default CallToAction
+export default CallToAction;

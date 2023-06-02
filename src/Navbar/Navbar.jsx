@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import profileImage from "../../public/images/profile.png";
-
+import Icon from '../../public/images/level.png';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -12,9 +12,9 @@ const Navbar = () => {
       <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:p-4 pb-2">
           <a href="/" class="flex items-center">
-            {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo"/> */}
+            <Image sizes={2} src={Icon} class="h-[35px] w-[35px] mr-2" alt="Flowbite Logo" />
             <span class="self-center ml-4 sm:ml-0 text-2xl font-semibold pt-4 sm:pt-0 whitespace-nowrap dark:text-white">
-              Level UP Solutionms
+              LevelUP Solutionms
             </span>
           </a>
           <div class="flex md:order-2 m-[3px]">
@@ -125,7 +125,7 @@ const Navbar = () => {
           <div className="">
             <div className=" flex cursor-pointer">
               <Image className="w-14 ml-8 mt-4 flex" src={profileImage} />
-              
+
               <p className="my-auto ml-4 text-white font-semibold ">Sam</p>
               <p className="my-auto ml-2 text-white font-semibold ">Smith</p>
             </div>
@@ -142,7 +142,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex justify-center pb-2">
-          <p className={`${open ? null : "hidden"} text-xs font-light text-gray-200/40`}>
+          <p
+            className={`${
+              open ? null : "hidden"
+            } text-xs font-light text-gray-200/40`}
+          >
             All Rights Reserved - LevelUpSolutions 2023
           </p>
         </div>

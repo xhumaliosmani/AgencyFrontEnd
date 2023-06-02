@@ -10,19 +10,21 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="sm:flex justify-between py-10 px-8 grid bg-[#5F6F94]">
+      <div className="bg-gradient-to-r from-sky-500 to-indigo-500 h-[2px] w-[70%]"></div>
+      <div className="sm:flex justify-between py-10 px-8 grid bg-gray-900">
         <div className="text-white ">
-          <h1 className="w-full text-3xl font-bold cursor-pointer text-[#0c427b]">
-            BloggApp WoW.
+          <h1 className="w-full text-3xl font-bold cursor-pointer text-blue-400">
+            LevelUp Solutions
           </h1>
           <p className="py-4 ">
             {" "}
-            Welcome to our data analytics company, where we transform raw
-            information into actionable insights. With cutting-edge technology
-            and a team of skilled analysts, we specialize in deciphering complex
-            data sets to uncover valuable patterns and trends.
+            Welcome to LevelUp Solutions, where we transform raw information
+            into actionable insights. With cutting-edge technology and a team of
+            skilled analysts, we specialize in deciphering complex data sets to
+            uncover valuable patterns and trends with which wee take your
+            business to the Next Level.
           </p>
-          <div className="flex md:w-[75%] justify-between my-6">
+          <div className="flex md:w-[75%] justify-between my-6 text-blue-200">
             <FaFacebookSquare className="cursor-pointer  " size={30} />
             <FaInstagram className="cursor-pointer " size={30} />
             <FaTwitterSquare className="cursor-pointer " size={30} />
@@ -33,7 +35,7 @@ const Footer = () => {
         <div className="text-white sm:w-[900px] sm:ml-[18%] sm:mr-[12%] pt-10 sm:pt-0">
           <div className="">
             <h1 className="sm:w-[30rem] md:text4xl sm:text-3xl text-center text-2xl font-bold py-2">
-              Want tips & Tricks to optimize your flow?
+              Want tips & Tricks to optimize your Work flow?
             </h1>
             <p className=" sm:pl-16 text-center sm:ml-[-9%] pb-4">
               Sign up to our newsletter and stay up to date.
@@ -46,20 +48,20 @@ const Footer = () => {
                 type="email"
                 placeholder="Enter your E-Mail"
               />
-              <button className="bg-[#0c427b] mx-auto w-28 hover:bg-[#0e4f94] rounded-md font-medium">
+              <button className="bg-blue-400 mx-auto w-28 hover:bg-[#0e4f94] rounded-md font-medium">
                 Sign Up
               </button>
             </div>
             <p className="text-sm mx-10 flex-col text-center pt-4">
               Wee care about the protection of your data. Read our{" "}
-              <span className="underline cursor-pointer text-[#0c427b]">
+              <span className="underline cursor-pointer text-blue-400">
                 Privacy Policy
               </span>
             </p>
           </div>
         </div>
       </div>
-      <div className=" mx-auto py-16 px-24 grid lg:grid-cols-3 gap-8 text-gray-300 bg-[#5F6F90]">
+      <div className=" mx-auto pt-10 pb-8 px-24 grid lg:grid-cols-3 gap-8 text-gray-300 bg-gray-800">
         {/* <div>
           <div className="flex justify-between">
             <div>
@@ -86,7 +88,7 @@ const Footer = () => {
         </div> */}
         <div className="lg:col-span-3 flex justify-between ">
           <div>
-            <h6 className="font-medium text-gray-400">Solutions</h6>
+            <h6 className="font-medium text-blue-400">Solutions</h6>
             <ul>
               <li className="py-2 text-sm cursor-pointer font-semibold">
                 Analytics
@@ -103,7 +105,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h6 className="font-medium text-gray-400">Support</h6>
+            <h6 className="font-medium text-blue-400">Support</h6>
             <ul>
               <li className="py-2 text-sm cursor-pointer font-semibold">
                 Pricing
@@ -118,7 +120,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h6 className="font-medium text-gray-400">Company</h6>
+            <h6 className="font-medium text-blue-400">Company</h6>
             <ul>
               <li className="py-2 text-sm cursor-pointer font-semibold">
                 About
@@ -138,7 +140,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h6 className="font-medium text-gray-400">Legal</h6>
+            <h6 className="font-medium text-blue-400">Legal</h6>
             <ul>
               <li className="py-2 text-sm cursor-pointer font-semibold">
                 Claim
@@ -152,6 +154,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <div className="h-[1px] bg-gray-100/20 w-[100rem] ml-[-20rem]"></div>
+        <p className="pt-4 text-sm text-gray-200/40">
+          All Rights Reserved 2023 - LevelUp Solutions
+        </p>
       </div>
     </>
   );
