@@ -8,25 +8,31 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className=" h-[40rem] bg-gradient-to-r from-blue-300 to-blue-700 ">
+      <div className=" h-[40rem] bg-gradient-to-r from-blue-100 to-blue-200 ">
         <div className="mt-20">
-          <h1 className="flex justify-center mt-auto">
+          <h1 className="flex justify-center mt-auto text-transparent font-extrabold bg-clip-text bg-gradient-to-r to-purple-900 from-blue-900 text-[3rem]">
             Who are wee and whay are wee so good ?
           </h1>
           <div>
-            <p className="flex justify-center">
-              Well thats a good question, wee are a small company founded buy
-              two friends that hat a lot of excperience with growing and
-              consulting businesses{" "}
-            </p>
-            <Image src={TeamImage}/>
+            <div className="relative">
+              <div className="absolute w-[60%] right-0 pt-10">
+                <Image className="" src={TeamImage} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className='h-[40rem]'>
-        <h1 className='flex justify-center'>Where to Find us</h1>
+      <div className="h-[40rem]">
+        <div>
+          <p className="flex justify-center ">
+            Well thats a good question, wee are a small company founded buy two
+            friends that hat a lot of excperience with growing and consulting
+            businesses{" "}
+          </p>
+        </div>
+        <h1 className="flex justify-center">Where to Find us</h1>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" mx-auto pt-10 pb-8 px-24 grid lg:grid-cols-3 gap-8 text-gray-300 bg-gray-800">
+      <div className=" sm:mx-auto  pt-10 pb-8 px-24 sm:grid flex-row lg:grid-cols-3 w-screen gap-8 text-gray-300 bg-gray-800">
         {/* <div>
           <div className="flex justify-between">
             <div>
@@ -86,8 +86,8 @@ const Footer = () => {
             </div>
           </div>
         </div> */}
-        <div className="lg:col-span-3 flex justify-between ">
-          <div>
+        <div className="lg:col-span-3 flex justify-between w-auto ml-[-36%] sm:ml-0 sm:mb-0 mb-4">
+          <div className="pr-4">
             <h6 className="font-medium text-blue-400">Solutions</h6>
             <ul>
               <li className="py-2 text-sm cursor-pointer font-semibold">
@@ -104,7 +104,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="pr-4">
             <h6 className="font-medium text-blue-400">Support</h6>
             <ul>
               <li className="py-2 text-sm cursor-pointer font-semibold">
@@ -119,7 +119,7 @@ const Footer = () => {
               <li className="py-2 text-sm cursor-pointer font-semibold">API</li>
             </ul>
           </div>
-          <div>
+          <div className="pr-4">
             <h6 className="font-medium text-blue-400">Company</h6>
             <ul>
               <li className="py-2 text-sm cursor-pointer font-semibold">
@@ -155,7 +155,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-[1px] bg-gray-100/20 w-[100rem] ml-[-20rem]"></div>
-        <p className="pt-4 text-sm text-gray-200/40">
+        <p className="pt-4 text-sm flex justify-center text-center text-gray-200/40">
           All Rights Reserved 2023 - LevelUp Solutions
         </p>
       </div>

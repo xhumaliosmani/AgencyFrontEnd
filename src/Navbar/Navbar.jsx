@@ -9,13 +9,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+      <nav class="bg-white dark:bg-gray-900 fixed sm:w-full w-screen z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:p-4 pb-2">
           <a href="/" class="flex items-center">
             <Image
               sizes={2}
               src={Icon}
-              class="h-[35px] w-[35px] mr-2"
+              class="sm:h-[35px] sm:w-[35px] sm:mr-2 w-10 mr-[-10px] h-10 ml-4 mt-auto hidden sm:block"
               alt="Flowbite Logo"
             />
             <span class="self-center ml-4 sm:ml-0 text-2xl font-semibold pt-4 sm:pt-0 whitespace-nowrap dark:text-white">
@@ -38,10 +38,10 @@ const Navbar = () => {
             <button
               onClick={() => setOpen(!open)}
               type="button"
-              class="inline-flex mr-2 sm:mr-0 mt-[5px] sm:mt-0 items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="inline-flex mr-6   sm:mr-0 mt-[10px] sm:mt-0 items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             >
               <svg
-                class="w-10 h-10"
+                class="w-8 h-8"
                 aria-hidden="true"
                 fill="currentColor"
                 viewBox="0 0 20 20"
