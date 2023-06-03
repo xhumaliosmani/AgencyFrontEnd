@@ -12,9 +12,14 @@ const Navbar = () => {
       <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:p-4 pb-2">
           <a href="/" class="flex items-center">
-            <Image sizes={2} src={Icon} class="h-[35px] w-[35px] mr-2" alt="Flowbite Logo" />
+            <Image
+              sizes={2}
+              src={Icon}
+              class="h-[35px] w-[35px] mr-2"
+              alt="Flowbite Logo"
+            />
             <span class="self-center ml-4 sm:ml-0 text-2xl font-semibold pt-4 sm:pt-0 whitespace-nowrap dark:text-white">
-              LevelUP Solutionms
+              LevelUP Solutions 
             </span>
           </a>
           <div class="flex md:order-2 m-[3px]">
@@ -28,7 +33,7 @@ const Navbar = () => {
               type="button"
               class="hidden sm:block text-white border font-medium rounded-lg ml-4 text-sm px-4 hover:bg-blue-300/10 text-center "
             >
-              Register
+              Login
             </button>
             <button
               onClick={() => setOpen(!open)}
@@ -57,7 +62,7 @@ const Navbar = () => {
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
                   aria-current="page"
                 >
@@ -66,7 +71,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/about"
                   class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   About
@@ -74,7 +79,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/services"
                   class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Services
@@ -82,7 +87,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="contact"
                   class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contact
@@ -90,7 +95,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="features"
                   class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Features
@@ -105,19 +110,19 @@ const Navbar = () => {
         <div className={`${open ? null : "hidden"}  h-[21rem]`}>
           <ul>
             <li className="text-white hover:text-blue-500/60 font-semibold pl-8 cursor-pointer pb-4 pt-6">
-              Home
+              <a href="/">Home</a>
             </li>
             <li className="text-white hover:text-blue-500/60 font-semibold pl-8 cursor-pointer pb-4 ">
-              About
+              <a href="/about">About</a>
             </li>
             <li className="text-white hover:text-blue-500/60 font-semibold pl-8 cursor-pointer pb-4">
-              Services
+              <a href="/services">Services</a>
             </li>
             <li className="text-white hover:text-blue-500/60 font-semibold pl-8 cursor-pointer pb-4">
-              Contact
+              <a href="contact">Contact</a>
             </li>
             <li className="text-white hover:text-blue-500/60 font-semibold pl-8 cursor-pointer pb-4">
-              Features
+              <a href="features">Features</a>
             </li>
           </ul>
           <div className="bg-gray-200 h-[1px] w-[87%] ml-4 "></div>
