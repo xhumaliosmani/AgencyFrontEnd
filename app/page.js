@@ -1,5 +1,4 @@
 import React from "react";
-import HomePage from "./About/page";
 import Link from "next/link";
 import Navbar from "@/src/Navbar/Navbar";
 import Footer from "@/src/Footer/Footer";
