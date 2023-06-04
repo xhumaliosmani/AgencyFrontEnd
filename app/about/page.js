@@ -7,20 +7,16 @@ import TeamImage from "../../public/images/Team/team1.png";
 import Image from "next/image";
 
 const About = () => {
-    const { innerWidth: width, innerHeight: height } = window;
     const ref = useRef(null);
-
     const isInView = useInView(ref);
-
     const mainControls = useAnimation();
-    const slideControls = useAnimation();
-
     useEffect(() => {
       if (isInView) {
         //fire animation
         mainControls.start("visible");
       }
     }, [isInView]);
+    
   return (
     <>
       <Navbar />
