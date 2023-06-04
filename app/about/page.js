@@ -7,7 +7,7 @@ import TeamImage from "../../public/images/Team/team1.png";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-const About = ({props}) => {
+const page = ({props}) => {
     const ref = useRef(null);
     const isInView = useInView(ref);
     const mainControls = useAnimation();
@@ -156,4 +156,4 @@ const About = ({props}) => {
 
 // google api key : AIzaSyA5Ud0hQ6-yUdj0rde91fW5iRRL8vsszY4
 
-export default About;
+export default page;
